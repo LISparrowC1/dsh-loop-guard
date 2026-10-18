@@ -1,0 +1,5 @@
+# dsh-loop-guard bundle patch: inserts the loader entry. A manual install
+# appends the same entry to its own profile patch instead of listing this bundle.
+- insert:
+    - id: loop-guard
+      name: 'dsh-loop-guard'

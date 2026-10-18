@@ -1,0 +1,43 @@
+{
+  "name": "dsh-loop-guard",
+  "version": "0.1.0",
+  "private": true,
+  "description": "DSH plugin that stops a stalled agent: cuts off repeated model output, catches near-duplicate tool calls, and can cap runaway turns.",
+  "type": "module",
+  "main": "lib/index.js",
+  "exports": {
+    ".": "./lib/index.js",
+    "./package.json": "./package.json"
+  },
+  "files": [
+    "lib",
+    "cordis.patch.yml",
+    "README.md",
+    "README.zh.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test"
+  },
+  "keywords": [
+    "dsh",
+    "deepseek-harness",
+    "plugin",
+    "loop-guard",
+    "repetition"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/LISparrowC1/dsh-loop-guard.git"
+  },
+  "homepage": "https://github.com/LISparrowC1/dsh-loop-guard#readme",
+  "bugs": {
+    "url": "https://github.com/LISparrowC1/dsh-loop-guard/issues"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
