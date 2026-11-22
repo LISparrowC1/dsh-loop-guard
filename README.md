@@ -36,6 +36,8 @@ Tool-call arguments are never counted as model output: writing a file or running
 
 ## Install
 
+This plugin declares `engines.dsh: ^0.2.0-rc.2`, so DSH accepts it on every `0.2.x` release, prereleases included. It was built and tested against `0.2.0-rc.2` and re-verified against `0.2.2-rc.5`.
+
 Both paths need the profile name you run DSH with (for example `web`).
 
 **Bundle install (recommended).** From a git URL, tarball or local checkout:

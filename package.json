@@ -1,9 +1,12 @@
 {
   "name": "dsh-loop-guard",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "DSH plugin that stops a stalled agent: cuts off repeated model output, catches near-duplicate tool calls, and can cap runaway turns.",
   "type": "module",
+  "engines": {
+    "dsh": "^0.2.0-rc.2"
+  },
   "main": "lib/index.js",
   "exports": {
     ".": "./lib/index.js",
